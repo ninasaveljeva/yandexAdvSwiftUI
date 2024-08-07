@@ -32,11 +32,11 @@ final class InlineBannerViewController: UIViewController {
         return adView
     }
     
-    func loadBannerAdFor(view: AdView) {
-        DispatchQueue.global(qos: .background).async {
-            view.loadAd()
-        }
-    }
+//    func loadBannerAdFor(view: AdView) {
+//        DispatchQueue.global(qos: .background).async {
+//            view.loadAd()
+//        }
+//    }
     
 //    private lazy var adView: AdView = {
 //        let adSize = BannerAdSize.inlineSize(withWidth: self.view.frame.size.width - 20, maxHeight: CGFloat(AppConfiguration.kYANDEX_BANNER_HEIGHT))
@@ -182,8 +182,6 @@ struct AdvertsView: View {
     var body: some View {
         AdvertView()
         //AdvertIntertestialView()
-            .background(Color("BgColor"))
-            .foregroundColor(Color("FgColor"))
     }
 }
 
